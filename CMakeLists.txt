@@ -12,6 +12,11 @@ IF (UNIX)
     SET(CMAKE_MODULE_PATH "/usr/share/SFML/cmake/Modules/" "${PROJECT_SOURCE_DIR}" "${CMAKE_MODULE_PATH}")
 ENDIF (UNIX)
 
+if(EXISTS ${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+  include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+  set(CONAN_SYSTEM_INCLUDES ON)
+  conan_basic_setup()
+endif()
 
 FIND_PACKAGE(SFML REQUIRED COMPONENTS graphics window system audio)
 MESSAGE(STATUS "SFML_INCLUDE_DIR: ${SFML_INCLUDE_DIR}")
