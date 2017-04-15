@@ -1,3 +1,8 @@
+# To build the container:
+# docker build -t richi/conan:latest .
+# To launch the container:
+# docker run -it --rm --hostname conan --log-driver=journald richi/conan:latest
+
 FROM opensuse:tumbleweed
 
 MAINTAINER Richard Eigenmann
