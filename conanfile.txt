@@ -1,4 +1,5 @@
 [requires]
+openal-soft/1.17.2@hilborn/stable
 SFML/latest@signal9/stable
 
 [generators]

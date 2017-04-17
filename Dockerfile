@@ -15,14 +15,14 @@ RUN zypper --non-interactive in \
   cmake \
   gcc6 gcc6-c++ \
   llvm-clang \
-  libXrandr-devel openal-soft-devel flac-devel freetype-devel freetype2-devel libvorbis-devel libudev-devel libjpeg8-devel glew-devel freeglut-devel Mesa-devel \
+  libXrandr-devel flac-devel freetype-devel freetype2-devel libvorbis-devel libudev-devel libjpeg8-devel glew-devel freeglut-devel Mesa-devel \
   lcov \
   doxygen \
   xvfb-run \
   which \
   git;
 
-#  sfml2-devel \
+#  sfml2-devel openal-soft-devel \
 
 
 RUN pip install conan
