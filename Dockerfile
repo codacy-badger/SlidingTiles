@@ -31,7 +31,7 @@ RUN git clone https://github.com/richardeigenmann/SlidingTiles.git \
     && git fetch \
     && git checkout conan \
     && mkdir -p build && cd build \
-    && conan install openal-soft/1.17.2@hilborn/stable --build missing \
+    && conan install openal-soft/1.17.2@hilborn/stable --build=openal-soft \
     && conan install .. --build missing \
     && cmake .. && make -j8 \
     && cd bin \
